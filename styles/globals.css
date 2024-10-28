@@ -1,0 +1,188 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, Poppins, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
+p::after {
+  content: "\a";
+  white-space: pre;
+}
+
+b {
+  color: #36d7ff;
+  font-style: normal;
+}
+
+.chat-editor .ql-container {
+  border: none !important;
+  height: 89px !important;
+  width: 100% !important;
+  background-color: transparent !important;
+  border-bottom: 20px !important;
+  word-wrap: break-word !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+
+.ql-editor {
+  width: 100%;
+  border-radius: 6px !important;
+  background-color: #fbfcfd !important;
+  padding: 1rem !important;
+  padding-bottom: 12rem !important;
+  font-family: Poppins !important;
+  margin-top: 0.7rem !important;
+  font-size: 16px !important;
+}
+
+.chat-editor .ql-editor {
+  background: transparent;
+  height: 89px !important;
+  width: calc(100vw*0.75 - 450px) !important;
+  /* to prevent overflow of the component*/
+  background-color: transparent !important;
+  font-family: Poppins !important;
+  font-size: 16px !important;
+  flex-wrap: wrap !important;
+  border-radius: 20px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: wrap !important;
+  overflow-x: auto !important;
+  margin-top: 0 !important;
+  padding: 16px !important;
+
+  @media (max-width: 1100px) {
+    width: calc(100vw - 700px) !important;
+  }
+
+  @media (max-width: 990px) {
+    width: calc(100vw - 100px) !important;
+  }
+}
+
+.chat-editor .ql-editor {
+  font-family: Poppins !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 24.27px !important;
+  /* 161.8% */
+  letter-spacing: 0.3px !important;
+}
+
+.chat-editor .ql-editor .ql-blank::before {
+  color: var(--Neutral2, #AAACA6) !important;
+  font-style: normal !important;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  font-family: Poppins !important;
+  padding: 8px !important;
+  background-color: #F9F9F9;
+}
+
+.ql-snow .ql-picker-options {
+  bottom: 30px !important;
+}
+
+.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  top: auto !important;
+}
+
+.chat-editor .ql-toolbar.ql-snow {
+  border: 0px !important;
+  border-top: 1px solid var(--Neutral1, #E2E3DD) !important;
+  padding: 8px !important;
+}
+
+input {
+  border: none;
+  font-size: 13px;
+  color: #3E46B6;
+  display: inline-block;
+  padding: 1px 2px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0.4rem 0.1rem !important;
+}
+
+.react-datepicker-wrapper input {
+  padding-top: 0.1rem;
+  margin-left: 0.3rem;
+  width: 6rem !important;
+
+}
+
+.react-datepicker-wrapper input::placeholder {
+  color: #3E46B6 !important;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 20.063em) {
+  .iconSize {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  .iconSize {
+    font-size: 1rem;
+  }
+
+  .ql-snow.ql-toolbar button {
+    width: 25px !important;
+  }
+}
+
+@media screen and (max-width: 26.5625em) {
+  canvas {
+    display: block !important;
+    box-sizing: border-box !important;
+    height: 195px !important;
+    width: 100% !important;
+    /* width: 84% !important; */
+  }
+}
+
+/* @media screen and (max-width: 20em){
+    canvas {
+      width: 78% !important;
+    }
+} */
